@@ -1,12 +1,7 @@
-import socket
-from IPy import IP
+import subprocess
 
-ipaddress=input('Enter the Target IP: ')
-port=int(input('Enter the Port to be scanned: '))
+mac=input('Enter the New MAC: ')
+interface=input('Enter interface: ')
 
-try:
-    sock=socket.socket()
-    sock.connect((ipaddress, port))
-    print('Port '+str(port)+' is Open')
-except:
-    print('Port '+str(port)+' is Closed')
+subprocess.run(["macchanger", "-m", mac, interface])
+subprocess.run(["macchanger", "-m", mac, interface])
