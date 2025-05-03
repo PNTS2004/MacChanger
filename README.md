@@ -5,7 +5,7 @@ This is a simple little Python script to change your MAC address using `macchang
 * What MAC address you want to switch to
 * Which interface you want to apply it on (like `eth0` or `wlan0`)
 
-Once you enter both, it goes ahead and runs the command to apply the change. The script runs the same `macchanger` command twice because sometimes `macchanger` command doesn't work if run once. Though it happens rarely but in to avoid it, the command is run twice to make sure that the MacChanger2 is working efficiently.
+Once you enter both, it goes ahead and runs the command to apply the change. The script runs the same `macchanger` command twice because sometimes `macchanger` command doesn't work if run once. Though it happens rarely but in order to avoid it, the command is run twice to make sure that the MacChanger2 is working efficiently.
 
 ### Requirements
 
